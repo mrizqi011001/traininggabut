@@ -290,6 +290,18 @@ button[type="submit"] {
 }
 
 /* FOOTER */
+
+.forum {
+    border: 1px solid black;
+    width: 330px;
+}
+
+.form-output {
+  border: 1px solid black;
+  width: 360px;
+  height: 160px;
+}
+
 .kaki {
   padding: 0px;
   border: 3px solid yellow;
