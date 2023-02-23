@@ -40,7 +40,11 @@
         <section id="ninja">
           <div class="container">
             <div class="ninja">
-              <h1 class="ninjah1">Hi M.Rizqi, Welcome to Homepage</h1>
+              <h1 class="ninjah1">Hi <span id="tayo"></span>, Welcome to Homepage</h1>
+              <script>
+              var nama = prompt("Masukan namamu");  
+              document.getElementById("tayo").innerText = nama;             
+              </script>
               <p class="ninjap">Website Latihan Pertama</p>
               <img class="ninjaimg" src=asset/pro.jpg alt="proimg"/>
             </div>

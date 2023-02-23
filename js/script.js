@@ -13,6 +13,9 @@ document.addEventListener('click', function (e) {
     navbarNav.classList.remove('active');
   }
 });
+
+
+
 // validate form
 
 
@@ -33,3 +36,5 @@ function validateform() {
   return false;
   
 }
+
+  
