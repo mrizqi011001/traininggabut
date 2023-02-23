@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="css/home.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Homepage</title>
+    <body>
+      <!-- bagian atas -->
+      <nav class="navbar">
+        <img
+          class="heroimg"
+          src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png"
+          width="40"
+          height="40"
+          alt="images"
+        />
+        <div class="navbar-nav">
+          <a class="chose" href="http://127.0.0.1:5502/home.html#">HOME</a>
+          <a
+            class="chose"
+            href="http://127.0.0.1:5500/profile.html"
+            style="text-decoration: none"
+            >Our Profile</a
+          >
+          <a class="chose" href="#" style="text-decoration: none">Portofolio</a>
+          <a class="chose" href="#" style="text-decoration: none">Message Us</a>
+        </div>
+        <div class="navbar-extra">
+          <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+      </nav>
+      <script>
+        feather.replace();
+      </script>
+      <script src="js/script.js"></script>
+      <main>
+        <section id="ninja">
+          <div class="container">
+            <div class="ninja">
+              <h1 class="ninjah1">Hi M.Rizqi, Welcome to Homepage</h1>
+              <p class="ninjap">Website Latihan Pertama</p>
+              <img class="ninjaimg" src=asset/pro.jpg alt="proimg"/>
+            </div>
+          </div>
+          <hr class="ninjaline" />
+        </section>
+        <section id="bot">
+          <div class="container">
+            <div class="head">
+              <h1 class="bothead">Our Headquarter</h1>
+              <div class="botimg">
+                <div class="out">
+                  <img class="misik1" src="asset/logo.png" alt="" />
+                  <h1>Bot misik 1</h1>
+                </div>
+                <div>
+                  <img class="misik1" src="asset/logo.png" alt="" />
+                  <h1>Bot misik 2</h1>
+                </div>
+                <div>
+                  <img class="misik1" src="asset/logo.png" alt="" />
+                  <h1>Bot misik 3</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="ninjaline2" />
+        </section>
+        <section id="bawah" class="inputoutput">
+          <main class="content">
+            <form
+              class="forum"
+              name="forum"
+              onsubmit="return validateform()"
+              method="get"
+            >
+              <div class="formula">
+                <label for="name" class="forum1">Nama</label>
+                <input type="text" name="full-name" autocomplete="off" />
+              </div>
+              <div class="formula">
+                <label> Tanggal Lahir</label>
+                <input type="date" class="births" name="birth-date" />
+              </div>
+              <div class="formula">
+                <label class="forum1">Jenis Kelamin</label>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="Laki-laki"
+                  for="male"
+                />Laki-laki
+                <input
+                  type="radio"
+                  name="gender"
+                  value="Perempuan"
+                  for="female"
+                />Perempuan
+              </div>
+              <div class="formula">
+                <label for="pesan" class="forum1" id="pesan" name="messages"
+                  >Pesan</label
+                >
+                <textarea class="pesan" name="messages"></textarea>
+              </div>
+              <div>
+                <button type="submit">SUBMIT</button>
+              </div>
+            </form>
+            <div class="form-output">
+              <p>Nama :<span id="sender-full-name"></span></p>
+              <p>Tanggal Lahir :<span id="sender-birth-date"></span></p>
+              <p>Jenis Kelamin :<span id="sender-gender"></span></p>
+              <p>Pesan :<span id="sender-messages"></span></p>
+            </div>
+          </main>
+        </section>
+      </main>
+      <!-- footer -->
+      <footer class="kaki">
+        <div class="kaki1">
+          <p>REVOU</p>
+          <p>Copyright : M.Rizqi</p>
+        </div>
+      </footer>
+    </body>
+  </head>
+</html>

@@ -1,0 +1,493 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* end reset */
+.chose {
+  color: black;
+}
+
+.navbar {
+  border: 5px solid #ffcc5c;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.4rem 7%;
+}
+.navbar > div {
+  padding: 10px;
+  text-align: center;
+  font-size: 14sp;
+  color: #ffeead;
+  border: 2px solid;
+  background-color: green;
+}
+
+.navbar {
+  border: 5px solid #ffcc5c;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0rem 7%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: aqua;
+}
+.navbar > div {
+  padding: 10px;
+  text-align: center;
+  font-size: 14sp;
+  color: #ffeead;
+  border: 2px solid;
+  background-color: green;
+  display: flex;
+  gap: 20px;
+}
+.heroimg {
+  margin-right: auto;
+}
+#hamburger-menu {
+  display: none;
+}
+.navbar .navbar-extra {
+  display: none;
+}
+
+/* container */
+.hero {
+  border: 5px solid #ffcc5c;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0rem 7%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: aqua;
+}
+.hero > div {
+  padding: 10px;
+  text-align: center;
+  font-size: 14sp;
+  color: #ffeead;
+  border: 2px solid;
+  background-color: green;
+}
+.heroimg {
+  margin-right: auto;
+}
+
+/* main */
+
+.ninja {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.ninjah1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.ninjap {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.ninjaimg {
+  width: 800px;
+  height: 100%;
+  align-self: center;
+}
+.ninjaline {
+  border: 2px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* gambar bot */
+.content {
+  flex-direction: row;
+  display: flex;
+  gap: 500px;
+}
+.bothead {
+  padding-left: 20px;
+  font-size: 35px;
+  font-weight: 700;
+}
+.misik1 {
+  width: 260px;
+  height: 100%;
+}
+.botimg {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 120px;
+  gap: 90px;
+}
+.bothead {
+  margin-left: 40px;
+}
+.ninjaline2 {
+  border: 2px solid black;
+  margin-top: 42px;
+  margin-bottom: 20px;
+}
+.forum {
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+.formula {
+  padding: 10px;
+
+  width: 350px;
+}
+.forum1 {
+  padding: 0px;
+  border: 0px solid rgb(255, 255, 255);
+  width: 92px;
+  display: inline-block;
+}
+button[type="submit"] {
+  width: 90%;
+}
+.form-output {
+  display: table-column;
+  margin: 14px;
+}
+.form-output > p {
+  margin: 20px;
+}
+
+/* FOOTER */
+.kaki {
+  padding: 0px;
+  border: 3px solid yellow;
+  background-color: bisque;
+  font-size: 16px;
+}
+.kaki1 {
+  display: flex;
+  gap: 1706px;
+}
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+  .navbar .navbar-extra {
+    display: flex;
+  }
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: aqua;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+    flex-direction: column;
+    display: flex;
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: black;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+
+  .ninjah1 {
+    margin-top: 50px;
+  }
+
+  .kaki1 {
+    display: flex;
+    gap: 1150px;
+  }
+
+  .births {
+    margin-left: 23px;
+  }
+
+  .content {
+    gap: 380px;
+  }
+}
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: aqua;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+    flex-direction: column;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: black;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+
+  .botimg {
+    display: inline-block;
+    flex-direction: column;
+    padding-left: 170px;
+  }
+  .misik1 {
+    size-adjust: 50%;
+    justify-content: center;
+  }
+  .ninjah1 {
+    margin-top: 45px;
+  }
+  .ninjaimg {
+    height: 50%;
+    width: 400px;
+  }
+  .births {
+    margin-left: 36px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .kaki {
+    font-size: 12px;
+  }
+
+  .kaki1 {
+    display: flex;
+    gap: 620px;
+  }
+}
+
+/* mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  .navbar .navbar-extra {
+    display: flex;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: aqua;
+    width: 30rem;
+    height: 100vh;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .botimg {
+    display: inline-block;
+    flex-direction: column;
+    padding-left: 70px;
+  }
+
+  .misik1 {
+    size-adjust: 50%;
+    justify-content: center;
+  }
+
+  .ninjah1 {
+    margin-top: 45px;
+  }
+
+  .ninjaimg {
+    height: 50%;
+    width: 300px;
+  }
+
+  .births {
+    margin-left: 42px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .kaki {
+    font-size: 10px;
+  }
+
+  .kaki1 {
+    display: flex;
+    gap: 320px;
+  }
+}
