@@ -1,40 +1,37 @@
+const navbarNav = document.querySelector('.navbar-nav');	
 
-const navbarNav = document.querySelector('.navbar-nav');
-
-document.querySelector('#hamburger-menu').onclick = () => {
-  navbarNav.classList.toggle('active');
-};
-
-
-const hamburger = document.querySelector('#hamburger-menu');
-
-document.addEventListener('click', function (e) {
-  if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
-    navbarNav.classList.remove('active');
-  }
-});
+document.querySelector('#hamburger-menu').onclick = () => {	
+  navbarNav.classList.toggle('active');	
+};	
 
 
+const hamburger = document.querySelector('#hamburger-menu');	
 
-// validate form
+document.addEventListener('click', function (e) {	
+  if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {	
+    navbarNav.classList.remove('active');	
+  }	
+});	
 
 
-function validateform() {
-  var name = document.forms["forum"]["full-name"].value;
-  var date = document.forms["forum"]["birth-date"].value;
-  var gender = document.forms["forum"]["gender"].value;
-  var messages = document.forms["forum"]["messages"].value;
 
-  document.getElementById("sender-full-name").innerText = name;
-  document.getElementById("sender-birth-date").innerText = date;
-  document.getElementById("sender-gender").innerText = gender;
-  document.getElementById("sender-messages").innerText = messages;
+// validate form	
 
-  var frm = document.getElementsByName('forum')[0];
-   frm.reset();
-  
-  return false;
-  
-}
 
-  
+function validateform() {	
+  var name = document.forms["forum"]["full-name"].value;	
+  var date = document.forms["forum"]["birth-date"].value;	
+  var gender = document.forms["forum"]["gender"].value;	
+  var messages = document.forms["forum"]["messages"].value;	
+
+  document.getElementById("sender-full-name").innerText = name;	
+  document.getElementById("sender-birth-date").innerText = date;	
+  document.getElementById("sender-gender").innerText = gender;	
+  document.getElementById("sender-messages").innerText = messages;	
+
+  var frm = document.getElementsByName('forum')[0];	
+   frm.reset();	
+
+  return false;	
+
+}	
