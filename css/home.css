@@ -263,9 +263,11 @@ table {
   margin-top: 42px;
   margin-bottom: 20px;
 }
+/* form */
 .forum {
-  padding-left: 30px;
-  margin-bottom: 30px;
+  float: left;
+  padding: 20px;
+  margin: 20px;
 }
 .formula {
   padding: 10px;
@@ -281,10 +283,13 @@ table {
 button[type="submit"] {
   width: 90%;
 }
+
 .form-output {
-  display: table-column;
-  margin: 14px;
+  float: right;
+  padding: 20px;
+  margin: 20px;
 }
+
 .form-output > p {
   margin: 20px;
 }
